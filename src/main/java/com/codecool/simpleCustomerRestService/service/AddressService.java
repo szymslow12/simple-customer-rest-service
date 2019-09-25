@@ -15,11 +15,17 @@ public class AddressService {
 
 
     public Address add(Address address) {
+        if (address == null) {
+            throw new IllegalArgumentException("Address cannot be null!");
+        }
         return repository.add(address);
     }
 
 
     public Address get(Long id) {
+        if (id == null) {
+            throw new IllegalArgumentException("ID cannot be null!");
+        }
         return repository.get(id);
     }
 }

@@ -11,9 +11,6 @@ public class AddressRepository {
     private static final Map<Long, Address> data = new HashMap<>();
 
     public Address add(Address address) {
-        if (address == null) {
-            throw new IllegalArgumentException("Address cannot be null!");
-        }
         address.setId(idSequence);
         data.put(idSequence++, address);
         return address;
@@ -21,9 +18,6 @@ public class AddressRepository {
 
 
     public Address get(Long id) {
-        if (id == null) {
-            throw new IllegalArgumentException("ID cannot be null!");
-        }
         return data.get(id);
     }
 }
