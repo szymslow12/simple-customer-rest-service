@@ -11,9 +11,6 @@ public class CustomerRepository {
     private static final Map<Long, Customer> data = new HashMap<>();
 
     public Customer add(Customer customer) {
-        if (customer == null) {
-            throw new IllegalArgumentException("Customer cannot be null!");
-        }
         customer.setId(idSequence);
         data.put(idSequence++, customer);
         return customer;
@@ -21,9 +18,6 @@ public class CustomerRepository {
 
 
     public Customer get(Long id) {
-        if (id == null) {
-            throw new IllegalArgumentException("ID cannot be null!");
-        }
         return data.get(id);
     }
 }
