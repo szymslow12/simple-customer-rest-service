@@ -8,7 +8,7 @@ public class Address {
         return idSequence++;
     }
 
-    private long id;
+    private Long id;
     private String country;
     private String city;
     private String street;
