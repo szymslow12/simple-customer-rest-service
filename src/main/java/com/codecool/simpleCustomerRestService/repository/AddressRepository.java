@@ -7,13 +7,11 @@ import java.util.Map;
 
 public class AddressRepository {
 
-    private static Long idSequence = 0L;
     private static final Map<Long, Address> data = new HashMap<>();
 
     public Address add(Address address) {
-        address.setId(idSequence);
-        data.put(idSequence++, address);
-        return address;
+        address.setId(Address.getSequence());
+        return data.put(address.getId(), address);
     }
 
 

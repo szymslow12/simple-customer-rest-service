@@ -2,6 +2,12 @@ package com.codecool.simpleCustomerRestService.domain;
 
 public class Address {
 
+    private static Long idSequence = 0L;
+
+    public static Long getSequence() {
+        return idSequence++;
+    }
+
     private long id;
     private String country;
     private String city;
