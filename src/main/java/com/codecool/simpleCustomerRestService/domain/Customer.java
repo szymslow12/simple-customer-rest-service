@@ -2,7 +2,7 @@ package com.codecool.simpleCustomerRestService.domain;
 
 public class Customer {
 
-    private static Long idSequence = 0L;
+    private static Long idSequence = 1L;
 
     public static Long getSequence() {
         return idSequence++;
