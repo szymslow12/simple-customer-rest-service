@@ -2,6 +2,12 @@ package com.codecool.simpleCustomerRestService.domain;
 
 public class Customer {
 
+    private static Long idSequence;
+
+    public static Long getSequence() {
+        return idSequence++;
+    }
+
     private long id;
     private String firstName;
     private String lastName;

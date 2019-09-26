@@ -7,13 +7,11 @@ import java.util.Map;
 
 public class CustomerRepository {
 
-    private static Long idSequence;
     private static final Map<Long, Customer> data = new HashMap<>();
 
     public Customer add(Customer customer) {
-        customer.setId(idSequence);
-        data.put(idSequence++, customer);
-        return customer;
+        customer.setId(Customer.getSequence());
+        return data.put(customer.getId(), customer);
     }
 
 
