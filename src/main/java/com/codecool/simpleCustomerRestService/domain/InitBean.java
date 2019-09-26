@@ -10,8 +10,8 @@ import java.time.ZonedDateTime;
 public class InitBean {
 
     public InitBean(AddressService addressService, CustomerService customerService) {
-        Address address = new Address(0,"Poland", "Cracow", "Grodzka", "30-000");
-        Customer customer = new Customer(0, "Jan", "Kowalski", "789789789", "kowalski@kowalski.com", address);
+        Address address = new Address(0L,"Poland", "Cracow", "Grodzka", "30-000");
+        Customer customer = new Customer(0L, "Jan", "Kowalski", "789789789", "kowalski@kowalski.com", address);
         addressService.add(address);
         customerService.add(customer);
         System.out.println(String.format("%s - Generated initial repository data", ZonedDateTime.now()));

@@ -15,7 +15,7 @@ public class Customer {
     private String email;
     private Address address;
 
-    public Customer(long id, String firstName, String lastName, String phoneNumber, String email, Address address) {
+    public Customer(Long id, String firstName, String lastName, String phoneNumber, String email, Address address) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -24,11 +24,11 @@ public class Customer {
         this.address = address;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
