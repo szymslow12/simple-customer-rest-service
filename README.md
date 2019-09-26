@@ -13,15 +13,17 @@ Customer Simple Rest Service
 
 {
 
-    'firstName': 'Jan',
-    'lastName': 'Kowalski',
-    'phoneNumber': '123123123',
-    'email': 'kowalski@kowalski.com',
-    'address': {
-        'country': 'Poland',
-        'city': 'Cracow',
-        'street': 'Grodzka",
-        'zip': '30-000'
+    customer: {
+        'firstName': 'Jan',
+        'lastName': 'Kowalski',
+        'phoneNumber': '123123123',
+        'email': 'kowalski@kowalski.com',
+        'address': {
+            'country': 'Poland',
+            'city': 'Cracow',
+            'street': 'Grodzka",
+            'zip': '30-000'
+        }
     }
 }
 
