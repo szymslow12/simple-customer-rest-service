@@ -3,7 +3,9 @@ package com.codecool.simpleCustomerRestService.service;
 import com.codecool.simpleCustomerRestService.domain.Address;
 import com.codecool.simpleCustomerRestService.repository.AddressRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AddressService {
 
     private AddressRepository repository;

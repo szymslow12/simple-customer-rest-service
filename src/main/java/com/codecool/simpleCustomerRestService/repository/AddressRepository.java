@@ -1,10 +1,12 @@
 package com.codecool.simpleCustomerRestService.repository;
 
 import com.codecool.simpleCustomerRestService.domain.Address;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 public class AddressRepository {
 
     private static final Map<Long, Address> data = new HashMap<>();
